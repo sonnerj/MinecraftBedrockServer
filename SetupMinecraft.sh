@@ -95,7 +95,7 @@ if [ -d "$ServerName" ]; then
 
   # Download start.sh from repository
   echo "Grabbing start.sh from repository..."
-  wget -O start.sh https://raw.githubusercontent.com/TheRemote/MinecraftBedrockServer/master/start.sh
+  wget -O start.sh https://raw.githubusercontent.com/sonnerj/MinecraftBedrockServer/master/start.sh
   chmod +x start.sh
   sed -i "s:dirname:$DirName:g" start.sh
   sed -i "s:servername:$ServerName:g" start.sh
